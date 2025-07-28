@@ -792,7 +792,7 @@ header {
 
 .about-section {
   background-color: #f9fbfd;
-  padding: 13rem 1rem 1rem;
+  padding: 6rem 1rem 1rem;
   font-family: 'Segoe UI', sans-serif;
   color: #1a1a1a;
 }
@@ -840,7 +840,7 @@ header {
 /* Responsive Design */
 @media (min-width: 768px) {
   .about-section {
-    padding: 4rem 2rem;
+    padding: 7rem 2rem;
   }
 
   .about-section h2 {
