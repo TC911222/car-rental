@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Gallery</title>
+    <style>
+        :root {
+            --primary: #1E40AF;
+            --hover: #1D4ED8;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg: #f9fafb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--text-dark);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .car-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-card .content {
+            padding: 1rem;
+        }
+
+        .car-card h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: var(--text-dark);
+        }
+
+        .car-card p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 0.5rem 0;
+        }
+
+        .car-card .price {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--hover);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Top 10 Cars Available for Rent</h2>
+
+    <div class="gallery">
+        <!-- Car 1 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Toyota+Camry+2021" alt="Toyota Camry">
+            <div class="content">
+                <h3>Toyota Camry 2021</h3>
+                <p>Automatic • Ikeja • AC • 5-Seater</p>
+                <p class="price">₦18,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Honda+CR-V+2020" alt="Honda CR-V">
+            <div class="content">
+                <h3>Honda CR-V 2020</h3>
+                <p>Auto • Lekki • SUV • 5-Seater</p>
+                <p class="price">₦20,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="car-card">
+            <img src="carwebing/Hyundaicars.jpeg" alt="Hyundai Elantra">
+            <div class="content">
+                <h3>Hyundai Elantra 2019</h3>
+                <p>Manual • Yaba • Compact</p>
+                <p class="price">₦13,500/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Toyota+Corolla+2022" alt="Toyota Corolla">
+            <div class="content">
+                <h3>Toyota Corolla 2022</h3>
+                <p>Auto • VI • Fuel Efficient</p>
+                <p class="price">₦19,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 5 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Lexus+RX+350" alt="Lexus RX">
+            <div class="content">
+                <h3>Lexus RX 350</h3>
+                <p>Luxury • Lekki Phase 1 • Auto</p>
+                <p class="price">₦30,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 6 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Kia+Rio+2018" alt="Kia Rio">
+            <div class="content">
+                <h3>Kia Rio 2018</h3>
+                <p>Budget • Ikeja • Clean Ride</p>
+                <p class="price">₦11,500/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 7 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Toyota+Hiace+Bus" alt="Toyota Hiace">
+            <div class="content">
+                <h3>Toyota Hiace Bus</h3>
+                <p>Group Trips • 12 Seater • A/C</p>
+                <p class="price">₦40,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 8 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Mercedes+Benz+GLA" alt="Mercedes GLA">
+            <div class="content">
+                <h3>Mercedes-Benz GLA</h3>
+                <p>Luxury SUV • Victoria Island</p>
+                <p class="price">₦35,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 9 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Toyota+Sienna+LE" alt="Toyota Sienna">
+            <div class="content">
+                <h3>Toyota Sienna LE</h3>
+                <p>Family Trips • A/C • 7 Seater</p>
+                <p class="price">₦28,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Car 10 -->
+        <div class="car-card">
+            <img src="https://via.placeholder.com/400x200?text=Nissan+Altima+2019" alt="Nissan Altima">
+            <div class="content">
+                <h3>Nissan Altima 2019</h3>
+                <p>Comfortable • Ikeja GRA • Auto</p>
+                <p class="price">₦17,000/day</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Here</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="fav-icon2.png" type="image/png" />
+</head>
+<body>
+    <header>
+        <h2>CAR RENTAL</h2>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">About</a></li>
+            </ul>
+        </nav>
+    
+        <!-- MENU-ICON -->
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </header>
+    
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="booking-section">
+        <h2>Book a Car Now</h2>
+        <form action="https://formsubmit.co/ofojebeeinsteintochukwu@gmail.com" method="POST" class="booking-form">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="carType">Select Car</label>
+                <select id="carType" name="carType" required>
+                    <option value="">Choose a car</option>
+                    <option value="Toyota Camry">Toyota Camry</option>
+                    <option value="Honda Accord">Honda Accord</option>
+                    <option value="Lexus RX 350">Lexus RX 350</option>
+                    <option value="Toyota Corolla">Toyota Corolla</option>
+                    <!-- Add more cars -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pickupDate">Pick-up Date</label>
+                <input type="date" id="pickupDate" name="pickupDate" required />
+            </div>
+
+            <div class="form-group">
+                <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate" name="returnDate" required />
+            </div>
+
+            <div class="form-group">
+                <label for="location">Pick-up Location</label>
+                <input type="text" id="location" name="location" placeholder="e.g. Ikeja, Lagos" required />
+            </div>
+
+            <input type="hidden" name="_autoresponse" value="Thanks for booking with us! We’ll confirm your rent shortly.">
+            <input type="hidden" name="_template" value="table">
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="at">© 2025 ClientCars</div>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </section>
+
+        <!-- FOOTER -->
+    <script src="index.js"></script>
+</body>
+</html>

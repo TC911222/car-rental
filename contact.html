@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="carwebing/fav-icon2.png" type="image/png" />
+</head>
+
+<body>
+    <header>
+        <h2>CAR RENTAL</h2>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <!-- MENU-ICON -->
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form   action="https://formspree.io/f/xovlwnzk"
+  method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+    
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Inquiry, Complaint, etc." required />
+                <input type="hidden" name="_autoresponse"
+                    value="Thanks for reaching out! We’ve received your message and will respond shortly.">
+
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+    
+            <button type="submit">Send Message</button>
+
+            <!-- Auto-reply to users -->
+<!--             <input type="hidden" name="_autoresponse" value="Thanks for contacting us. We'll get back to you shortly."> -->
+            
+            <!-- Redirect after form submission -->
+ <!--            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+        </form>
+    </section>
+    <!-- MAP EMBED -->
+
+<!-- MAP SECTION -->
+    <section class="contact-map">
+        <h2 class="text-center">Find Us Here</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.7105058570573!2d3.3792056999999996!3d6.5243790999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf46f44fcacdb%3A0x38eb5049f546f32c!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1654875675678"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="at">© 2025 ClientCars</div>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
